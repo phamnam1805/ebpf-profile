@@ -11,7 +11,7 @@ This project demonstrates periodic stack sampling and delivery of stacktrace eve
 
 ## Key Differences from Original
 
-- **Userspace Language**: Go instead of C
+- **Userspace Language**: Go instead of Rust
 - **BPF Library**: `github.com/cilium/ebpf` instead of libbpf (but `bpf2go` is used for code generation)
 - **Trigger mechanism**: perf events + `perf_event_open` to create FDs and attach the eBPF profiling program
 - **Ring buffer**: uses a ring buffer map for efficient kernel→userspace event delivery
