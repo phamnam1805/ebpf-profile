@@ -1,6 +1,6 @@
 # eBPF Profile
 
-This repository is an adaptation of Eunomia's example 12 (profile) and demonstrates stack profiling using eBPF. The userspace program is written in Go and uses the `cilium/ebpf` library. Per-CPU perf events (created via the kernel `perf_event_open` API) are used to trigger an eBPF program that captures stack traces and pushes events to a ring buffer consumed by userspace.
+This repository is an adaptation of the [eunomia-bpf profile example](https://github.com/eunomia-bpf/bpf-developer-tutorial/blob/main/src/12-profile/README.md), using Go with [cilium/ebpf](https://github.com/cilium/ebpf) library for the userspace code instead of the original Rust implementation.
 
 ## Overview
 
