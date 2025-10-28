@@ -49,7 +49,7 @@ ebpf-profile/
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/phamnam1805/ebpf-profile.git
 cd ebpf-profile
 
 # Install Go deps
